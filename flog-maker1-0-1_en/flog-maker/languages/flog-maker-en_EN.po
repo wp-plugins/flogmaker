@@ -1,0 +1,575 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FlogMaker\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-04-15 16:40+0100\n"
+"Last-Translator: Mornet Céline <celine_mornet@hotmail.com>\n"
+"Language-Team: LutinCapuche <celine_mornet@hotmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: D:\\SITES\\wordpress\\PLUGIN FLOGMAKER\\flog-maker1-0-1_EN_wpmu\\flog-maker\\\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: admin\n"
+
+#: admin/admin.php:7
+msgid "FlashBlog"
+msgstr "FlashBlog"
+
+#: admin/admin.php:8
+msgid "FlashBlog Infos"
+msgstr "FlashBlog Infos"
+
+#: admin/admin.php:8
+msgid "Gestion des infos"
+msgstr "Infos management"
+
+#: admin/admin.php:9
+msgid "Editer les onglets"
+msgstr "Edit Tab"
+
+#: admin/admin.php:9
+msgid "Gestion des onglets"
+msgstr "Tabs managment"
+
+#: admin/admin.php:10
+msgid "Editer couleurs et fond"
+msgstr "Edit background and colors"
+
+#: admin/admin.php:10
+msgid "Couleurs et fond"
+msgstr "Background and colors"
+
+#: admin/admin.php:11
+msgid "Advanced"
+msgstr "Advanced"
+
+#: admin/advanced.php:36
+#: admin/advanced.php:150
+msgid "Diagnostics"
+msgstr "Diagnostics"
+
+#: admin/advanced.php:38
+msgid "Diagnostics started..."
+msgstr "Diagnostics started..."
+
+#: admin/advanced.php:40
+msgid "Systems Check"
+msgstr "Systems Check"
+
+#: admin/advanced.php:42
+msgid "PHP Version:"
+msgstr "PHP Version:"
+
+#: admin/advanced.php:43
+msgid "MySQL Version:"
+msgstr "MySQL Version:"
+
+#: admin/advanced.php:44
+msgid "Server Software:"
+msgstr "Server Software:"
+
+#: admin/advanced.php:45
+msgid "WordPress Version"
+msgstr "WordPress Version"
+
+#: admin/advanced.php:46
+msgid "Flash Blog Plugin Version:"
+msgstr "Flash Blog Plugin Version:"
+
+#: admin/advanced.php:48
+msgid "Table Check"
+msgstr "Table Check"
+
+#: admin/advanced.php:55
+#, php-format
+msgid "Checking existence of %s..."
+msgstr "Checking existence of %s..."
+
+#: admin/advanced.php:58
+#: admin/advanced.php:113
+msgid "OK"
+msgstr "OK"
+
+#: admin/advanced.php:59
+msgid "Failed"
+msgstr "Failed"
+
+#: admin/advanced.php:59
+msgid "The table was not found in your database.  Check your database manually to see if the table has been renamed, or you have changed your WordPress table prefixes.  If the table does not exist, you may have to fully reinstall this plugin."
+msgstr ""
+"The table was not found in your database.\\n"
+"Check your database manually to see if the table has been renamed, or you have changed your WordPress table prefixes.\\n"
+"If the table does not exist, you may have to fully reinstall this plugin."
+
+#: admin/advanced.php:73
+#: admin/advanced.php:99
+#: admin/advanced.php:134
+msgid "Uninstall"
+msgstr "Uninstall"
+
+#: admin/advanced.php:76
+msgid "Warning"
+msgstr "Warning"
+
+#: admin/advanced.php:78
+msgid "You are about to delete the following database tables:"
+msgstr "You are about to delete the following database tables"
+
+#: admin/advanced.php:86
+msgid "You will <strong>lose all data</strong> stored in the tables. Make absolutely sure you have these tables backed up if you wish to reinstall at a later date."
+msgstr ""
+"You will <strong>lose all data</strong> stored in the tables.\\n"
+"  Make absolutely sure you have these tables backed up if you wish to reinstall at a later date."
+
+#: admin/advanced.php:90
+msgid "Are you still sure you wish to uninstall?"
+msgstr "Are you still sure you wish to uninstall?"
+
+#: admin/advanced.php:91
+msgid "Cancel"
+msgstr "Cancel"
+
+#: admin/advanced.php:92
+msgid "Confirm"
+msgstr "Confirm"
+
+#: admin/advanced.php:101
+msgid "Deleting..."
+msgstr "Deleting..."
+
+#: admin/advanced.php:109
+#, php-format
+msgid "Dropping table %s..."
+msgstr "Dropping table %s..."
+
+#: admin/advanced.php:124
+#, php-format
+msgid "Deactivating plugin... to finish this process, <a href=\"%s\">click here</a>."
+msgstr "Deactivating plugin... to finish this process, <a href=\"%s\">click here</a>."
+
+#: admin/advanced.php:136
+msgid "Disabling the plugin does not remove any data that may have been created, such as posts and topics.  To completely remove this plugin, you can uninstall it here."
+msgstr ""
+"Disabling the plugin does not remove any data that may have been created, such as posts and topics. \\n"
+" To completely remove this plugin, you can uninstall it here."
+
+#: admin/advanced.php:139
+#, php-format
+msgid "<strong>WARNING:</strong> once uninstalled, this cannot be undone!  You should use the WordPress Database Backup plugin to back up all this data first.  Your data is stored in the %1$s, %2$s and %3$s tables."
+msgstr ""
+"<strong>WARNING:</strong> once uninstalled, this cannot be undone! \\n"
+" You should use the WordPress Database Backup plugin to back up all this data first.  Your data is stored in the %1$s, %2$s and %3$s tables."
+
+#: admin/advanced.php:142
+#, php-format
+msgid "<strong>Note:</strong> this will <em>not</em> delete any user information. Any users that registered are stored in the WordPress user management system.  You will have to remove personal accounts through the <a href=\"%s\">Authors &amp; Users</a> page."
+msgstr "<strong>Note:</strong> this will <em>not</em> delete any user information. Any users that registered are stored in the WordPress user management system.  You will have to remove personal accounts through the <a href=\"%s\">Authors &amp; Users</a> page."
+
+#: admin/advanced.php:145
+msgid "Uninstall Flog Maker"
+msgstr "Uninstall Flog Maker"
+
+#: admin/advanced.php:152
+msgid "Here you can check that your blog is suitably configured for running Flog Maker, and that all tables are intact and valid."
+msgstr "Here you can check that your blog is suitably configured for running Flog Maker, and that all tables are intact and valid."
+
+#: admin/advanced.php:155
+msgid "Start Diagnostic Run"
+msgstr "Start Diagnostic Run"
+
+#: admin/couleurs.php:12
+msgid "La couleur n'a pas &eacute;t&eacute; cr&eacute;&eacute;e"
+msgstr "Color not created"
+
+#: admin/couleurs.php:12
+msgid "Votre couleur est incorrecte.  Utilisez la notation hexad&eacute;cimale"
+msgstr "Wrong color. Please write it like 000000 without #"
+
+#: admin/couleurs.php:21
+msgid "La couleur a &eacute;t&eacute; mise &agrave; jour"
+msgstr "Color updated"
+
+#: admin/couleurs.php:23
+msgid "La couleur n'a pas &eacute;t&eacute; mise &agrave; jour."
+msgstr "Color not updated"
+
+#: admin/couleurs.php:33
+#: admin/onglets.php:37
+msgid "Error deleting"
+msgstr "Error deleting"
+
+#: admin/couleurs.php:33
+#: admin/onglets.php:37
+msgid "&quot;delete from&quot; location doesn't exist."
+msgstr "&quot;delete from&quot; location doesn't exist."
+
+#: admin/couleurs.php:36
+msgid "La couleur a correctement &eacute;t&eacute; supprim&eacute;e"
+msgstr "Color deleted"
+
+#: admin/couleurs.php:46
+msgid "Pas de couleurs avec cet id !"
+msgstr "There is no color with this id"
+
+#: admin/couleurs.php:52
+msgid "Editer la couleur"
+msgstr "Edit color"
+
+#: admin/couleurs.php:60
+#: admin/couleurs.php:123
+msgid "Couleur"
+msgstr "Color"
+
+#: admin/couleurs.php:76
+#: admin/onglets.php:136
+msgid "Confirmer les changements"
+msgstr "Confirm Changes"
+
+#: admin/couleurs.php:82
+msgid "Supprimer une couleur"
+msgstr "Delete color"
+
+#: admin/couleurs.php:91
+msgid "Supprimer la couleur"
+msgstr "Delete color"
+
+#: admin/couleurs.php:91
+msgid ""
+"etes vous sur de vouloir supprimer cette couleur.\\n"
+"&quot;Cancel&quot; pour annuler, &quot;OK&quot; pour confirmer."
+msgstr ""
+"You are about to delete this color.\\n"
+"&quot;Cancel&quot; to stop, &quot;OK&quot; to delete."
+
+#: admin/couleurs.php:104
+msgid "Le motif de fond a &eacute;t&eacute; mis &agrave; jour"
+msgstr "Background updated"
+
+#: admin/couleurs.php:106
+msgid "Le background"
+msgstr "Background"
+
+#: admin/couleurs.php:107
+msgid "Cr&eacute;ez votre motif de fond ! Il sera automatiquement enregistr&eacute; dans le r&eacute;pertoire wp-flashblog/img<br \\>Vous pouvez aussi le t&eacute;l&eacute;charger directement, mais ce n'est pas obligatoire."
+msgstr ""
+"You can create your own background pattern with this editor. \\n"
+"It will be automaticaly saved in your wp-flashblog/img directory.\\n"
+" You can also load it on your pc, but it is not necessary."
+
+#: admin/couleurs.php:117
+msgid "Les couleurs"
+msgstr "Colors"
+
+#: admin/couleurs.php:118
+msgid "Chaque couleur est attribu&eacute;e &agrave; une cat&eacute;gorie dans le blog flash. Si une cat&eacute;gorie n'a pas de couleur associ&eacute;e, elle sera par d&eacute;faut en noir."
+msgstr ""
+"One color for each category of your blog.\\n"
+" If there is no color for a category, it will be black."
+
+#: admin/couleurs.php:121
+#: admin/onglets.php:167
+msgid "ID"
+msgstr "ID"
+
+#: admin/couleurs.php:122
+msgid "Cat&eacute;gorie"
+msgstr "Category"
+
+#: admin/couleurs.php:124
+msgid "Code Couleur"
+msgstr "Color Code"
+
+#: admin/couleurs.php:134
+msgid "Vous n'avez pas encore cr&eacute;&eacute; de couleurs!"
+msgstr "You have no color yet !"
+
+#: admin/couleurs.php:154
+#: admin/onglets.php:213
+msgid "Edit"
+msgstr "Edit"
+
+#: admin/couleurs.php:163
+msgid "Ajouter une couleur"
+msgstr "Add a color"
+
+#: admin/couleurs.php:170
+msgid "Nouvelle Couleur"
+msgstr "New color"
+
+#: admin/couleurs.php:184
+msgid "Cr&eacute;er la couleur"
+msgstr "Create color"
+
+#: admin/infos.php:12
+msgid "Param&egrave;tres enregistr&eacute;s."
+msgstr "Definition settings saved."
+
+#: admin/infos.php:14
+msgid "Param&egrave;tres non enregistr&eacute;s."
+msgstr "Definition settings not saved."
+
+#: admin/infos.php:32
+msgid "Logo mis &agrave; jour"
+msgstr "Logo updated"
+
+#: admin/infos.php:35
+msgid "Le t&eacute;l&eacute;chargement a &eacute;chou&eacute;"
+msgstr "Upload failed"
+
+#: admin/infos.php:38
+msgid "Attention, le logo est trop grand ! taille maxi : 203*64"
+msgstr "File is too big. Max size : 203*64"
+
+#: admin/infos.php:52
+msgid "Param&egrave;tres"
+msgstr "Definition settings"
+
+#: admin/infos.php:56
+msgid "Nom du blog:"
+msgstr "Blog name"
+
+#: admin/infos.php:64
+msgid "URL :"
+msgstr "url"
+
+#: admin/infos.php:71
+msgid "Update Options"
+msgstr "Update Options"
+
+#: admin/infos.php:78
+msgid "Logo actuel :"
+msgstr "Logo Type :"
+
+#: admin/infos.php:86
+msgid "Fichier :"
+msgstr "File :"
+
+#: admin/infos.php:87
+msgid "Taille maxi 203*64 "
+msgstr "Max size : 203*64 "
+
+#: admin/onglets.php:18
+msgid "L'onglet n'a pas &eacute;t&eacute; cr&eacute;&eacute;e"
+msgstr "Tab not created"
+
+#: admin/onglets.php:18
+msgid "Votre onglet est incorrecte.  Utilisez la notation hexad&eacute;cimale"
+msgstr "Wrong tab. Please checked."
+
+#: admin/onglets.php:27
+msgid "L'onglet a &eacute;t&eacute; mis &agrave; jour"
+msgstr "Tab updated."
+
+#: admin/onglets.php:29
+msgid "L'onglet n'a pas &eacute;t&eacute; mis &agrave; jour."
+msgstr "Tab not updated."
+
+#: admin/onglets.php:40
+msgid "La onglet a correctement &eacute;t&eacute; supprim&eacute;e"
+msgstr "Tab deleted"
+
+#: admin/onglets.php:46
+msgid "Pas d\\'onglets avec cet id !"
+msgstr "No tab with this ID !"
+
+#: admin/onglets.php:51
+msgid "Editer l'onglet"
+msgstr "Edit tab"
+
+#: admin/onglets.php:55
+#: admin/onglets.php:227
+msgid "Nom de l'onglet"
+msgstr "Tab name"
+
+#: admin/onglets.php:63
+#: admin/onglets.php:235
+msgid "Nom simple pour l'url"
+msgstr "Simple name for url"
+
+#: admin/onglets.php:71
+#: admin/onglets.php:242
+msgid "http://"
+msgstr "http://"
+
+#: admin/onglets.php:71
+#: admin/onglets.php:242
+msgid "SERVER_NAME"
+msgstr "SERVER_NAME"
+
+#: admin/onglets.php:71
+#: admin/onglets.php:242
+msgid "/wp-flashblog/#"
+msgstr "/wp-flashblog/#"
+
+#: admin/onglets.php:79
+#: admin/onglets.php:250
+msgid "Fichier associ&eacute;"
+msgstr "Associated file"
+
+#: admin/onglets.php:88
+#: admin/onglets.php:259
+msgid "Le fichier est &agrave; placer dans le r&eacute;pertoire /wp-flashblog/onglets<br /> Largeur conseill&eacute;e : 220px<br />Hauteur conseill&eacute;e : 240px<br />Utilisez le ciblage relatif pour le bon fonctionnement de l'onglet."
+msgstr ""
+"If you want to change the tab file:\\n"
+"-Put your file on the /wp-flashblog/ directory\\n"
+"-Width adviced : 220 px\\n"
+"-Height adviced : 240 px\\n"
+"-Don't forget to not use '_root' path in your flash file."
+
+#: admin/onglets.php:94
+#: admin/onglets.php:266
+msgid "Picto associ&eacute;"
+msgstr "Associated picto"
+
+#: admin/onglets.php:119
+#: admin/onglets.php:275
+msgid "Le fichier est &agrave; placer dans le r&eacute;pertoire /wp-flashblog/pictos<br /> Largeur conseill&eacute;e : 35px\t<br /> Hauteur conseill&eacute;e : 35px<br />L'origine x y est au centre du picto."
+msgstr ""
+"If you want to change the picto :\\n"
+"-Put your file on the /wp-flashblog/picto\\n"
+"-Width adviced : 35 px\\n"
+"-Height adviced : 35 px\\n"
+"-The origine (x 0 and y 0 ) is on the center of the clip"
+
+#: admin/onglets.php:124
+#: admin/onglets.php:280
+msgid "Actif ?"
+msgstr "Active ?"
+
+#: admin/onglets.php:141
+msgid "Supprimer un onglet"
+msgstr "Delete tab"
+
+#: admin/onglets.php:150
+msgid "Supprimer l'onglet"
+msgstr "Delete tab"
+
+#: admin/onglets.php:150
+msgid ""
+"etes vous sur de vouloir supprimer cet onglet.\\n"
+"&quot;Cancel&quot; pour annuler, &quot;OK&quot; pour confirmer."
+msgstr ""
+"You are about to delete this tab.\n"
+"&quot;Cancel&quot; to stop, &quot;OK&quot; to delete."
+
+#: admin/onglets.php:163
+msgid "Les onglets"
+msgstr "Left Tabs"
+
+#: admin/onglets.php:164
+msgid "Les onglets sont les icones accessibles &agrave; gauche de l'interface.<br \\>Vous pouvez en ajouter autant que vous le souhaitez dans la limite de la zone d'affichage.<br \\>La cr&eacute;ation des onglets n&eacute;c&eacute;ssite un minimum de connaissances en flash.<br \\>Les onglets \"recherche\", \"contact\" et \"archives\" propos&eacute;s par d&eacute;faut sont greff&eacute;s  automatiquement &agrave; votre base.<br \\>L'onglet \"liens\" est bas&eacute; sur l'outil liens par d&eacute;faut de Wordpress. il r&eacute;cup&egrave;re les cat&eacute;gories et les liens qui sont actifs."
+msgstr ""
+"The tabs are pictos you can see on the left of the flash template.\\n"
+"You can add tabs, edit tabs and delete tabs.\\n"
+"To create a new onglet, you add to use Flash software.\\n"
+"Search tab, Archive tab and contact tab are integrated with WordPress' own user system."
+
+#: admin/onglets.php:168
+msgid "Nom"
+msgstr "Name"
+
+#: admin/onglets.php:169
+msgid "Nom url"
+msgstr "Url"
+
+#: admin/onglets.php:170
+msgid "Actif"
+msgstr "Active"
+
+#: admin/onglets.php:171
+msgid "Nom du fichier"
+msgstr "File name"
+
+#: admin/onglets.php:173
+msgid "Picto"
+msgstr "Picto"
+
+#: admin/onglets.php:181
+msgid "Vous n'avez pas encore cr&eacute;&eacute; de onglets!"
+msgstr "No tabs"
+
+#: admin/onglets.php:222
+msgid "Ajouter un onglet"
+msgstr "Add tab"
+
+#: admin/onglets.php:289
+msgid "Cr&eacute;er l'onglet"
+msgstr "Add tab"
+
+#: admin/overview.php:10
+msgid "Le fichier sitemap.xml a &eacute;t&eacute; mis a jour"
+msgstr "Sitemap file updated"
+
+#: admin/overview.php:16
+msgid "Flog Maker Overview"
+msgstr "Flog Maker Overview"
+
+#: admin/overview.php:18
+msgid "Bienvenue"
+msgstr "Welcome"
+
+#: admin/overview.php:21
+msgid "administrateur"
+msgstr "admin"
+
+#: admin/overview.php:21
+msgid "moderateur"
+msgstr "moderator"
+
+#: admin/overview.php:22
+#, php-format
+msgid "Ceci est le panel d'administration du pluggin flog-maker.<br \\><br \\>Il permet de configurer et de personnaliser celui ci tr&egrave;s simplement.<br \\>Une exp&eacute;rimentation de Wordpress bas&eacute; sur du Flash.<br \\>Vos droits actuels : %s ."
+msgstr ""
+"This is the control panel landing page for Flog maker administrators.\\n"
+" You currently have %s rights.\\n"
+" You can configure and customize it easily.\\n"
+" It is a full flash template for Wordpress or WPMU"
+
+#: admin/overview.php:27
+msgid "Voir le flashBlog"
+msgstr "See flashblog"
+
+#: admin/overview.php:28
+msgid "Editer mes param&egrave;tres g&eacute;n&eacute;raux"
+msgstr "Edit global settings"
+
+#: admin/overview.php:29
+msgid "Modifiez les couleurs du flashblog"
+msgstr "Edit Flog Makercolor "
+
+#: admin/overview.php:30
+msgid "Modifiez les onglets du flashblog"
+msgstr "Edit Flog Maker tabs "
+
+#: admin/overview.php:31
+msgid "Modifiez le fond du flashblog"
+msgstr "edit Flog Maker background "
+
+#: admin/overview.php:32
+msgid "Reg&eacute;n&eacute;rez le fichier sitemap.xml"
+msgstr "Rewriting the sitemap.xmml file"
+
+#: admin/overview.php:33
+msgid "Voir le fichier sitemap.xml"
+msgstr "See the sitemap.xml file"
+
+#: admin/overview.php:38
+msgid "Flog Maker Latest News"
+msgstr "Flog Maker Latest News"
+
+#: admin/overview.php:45
+#, php-format
+msgid "%s ago"
+msgstr " %s ago"
+
+#: admin/overview.php:50
+#, php-format
+msgid "Newsfeed could not be loaded.  Check the <a href=\"%s\">front page</a> to check for updates."
+msgstr ""
+"Newsfeed could not be loaded.\\n"
+" Check the <a href=\"%s\">front page</a> to check for updates."
+

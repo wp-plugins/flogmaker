@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	overflow:hidden;
+}
+
+html {	
+}
+
+body {
+
+}
+#flashcontent {
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
+	top:0;
+	left:0;		
+}
+	
+*html #flashcontent {
+	height: 100%;
+	overflow:hidden;
+}
+	
