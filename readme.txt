@@ -1,5 +1,5 @@
-ï»¿==== FlogMaker Plugin ====
-Contributors: CÃ©line Mornet
+==== FlogMaker Plugin ====
+Contributors: Céline Mornet
 Donate link: http://www.lutincapuche.com/
 Tags: formatting, flash
 Requires at least: 2.0.3
@@ -7,6 +7,7 @@ Tested up to: 2.0.3
 Stable tag: 1.0.1
 
 FLOG MAKER is an entirely self-contained alternative flash blog system that resides within a WordPress plugin
+
 
 == Description ==
 
@@ -70,23 +71,23 @@ UNINSTALLING
 If you don't like FlogMaker and want to remove it permanently, there is a clean uninstall option that will remove all data that was created when you installed. Simply go to FlahBlog > Advanced > Uninstall and follow the prompts and it'll be out of your hair in no time.
 CSS AND FLOGMAKER
 
-Css is not well interpreted in flash textfields. only few attributs are allowed (see the documentation), and that is why this plugin is absolutely not compatible with plugins like â€œsyntaxHighlighterÂ».
+Css is not well interpreted in flash textfields. only few attributs are allowed (see the documentation), and that is why this plugin is absolutely not compatible with plugins like “syntaxHighlighter».
 You can add pictures but no movies.
 
-Rare are css tags which are interpreted by Flash. Donâ€™t hope to use div or tables, they are not interpreted and can make bugs and break page layout.
+Rare are css tags which are interpreted by Flash. Don’t hope to use div or tables, they are not interpreted and can make bugs and break page layout.
 
-Texts styles are defined manually in the file : wp-flashblog/css/style.css. You can edit attributes and values, colors, fonts, sizes â€¦
+Texts styles are defined manually in the file : wp-flashblog/css/style.css. You can edit attributes and values, colors, fonts, sizes …
 These tags are mapped to the content with a replacement function of the following tags. If you do not use these tags, your text styles will be not visible in FlashBlog.
 
 So try to use at the maximum these tags in your content to have a nice and various article:
 
     * <strong></strong>
-    * <a href=â€" target=â€" title=â€"></a>
+    * <a href=”" target=”" title=”"></a>
     * <h1></h1>
     * <h2></h2>
     * <h3></h3>
     * <li></li>
-    * <img src=â€/84095907_0af4994686.jpgâ€ alt=â€un arbre â€ name=â€image109â€³ hspace=â€20â€³ vspace=â€20â€³ align=â€absmiddleâ€ id=â€image109â€³ />
+    * <img src=”/84095907_0af4994686.jpg” alt=”un arbre ” name=”image109? hspace=”20? vspace=”20? align=”absmiddle” id=”image109? />
     * <i></i>
     * <br />
 
