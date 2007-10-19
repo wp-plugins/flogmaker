@@ -1,0 +1,116 @@
+<style type="text/css">
+<!--
+.Style4 {font-family: Arial, Helvetica, sans-serif}
+.Style5 {font-size: x-small}
+.Style6 {font-family: Arial, Helvetica, sans-serif; font-size: x-small; }
+-->
+</style>
+
+
+<h1 class="Style4">Flog Maker : read me first</h1>
+<p class="Style4 Style5">Flog Maker 1.0.2<br \>
+15/04/07 13:59 GMT<br \>
+http://www.lutincapuche.com/wp-version-flash/<br \><br \>
+
+(C) Copyright Céline Mornet 2007<br \>
+This project is licensed under the GNU GPL - see license-gpl.txt
+  <br \>
+  <br \>
+  <a href="http://www.lutincapuche.com" target="_blank">http://www.lutincapuche.com</a>
+  <br \>
+  <a href="http://www.lutincapuche.com/index.php?pagename=forum&rs_discuss_where=forum&rs_discuss_forum=flogmaker&recent=4" target="_blank">Forum</a><br \>
+  <br \>
+	The <a href="http://www.lutincapuche.com/wp-version-flash/" target="_blank">Flog Maker</a> is a plugin for us with the <a href="http://wordpress.org/" target="_blank">Wordpress</a> publishing platform.
+  <br \> 
+  This is a very primitive piece of documentation, I do plan to write much fuller documentation for the next release in a couple of weeks , mostly covering the theming system.</p>
+<h2 class="Style4">WHAT IS FLOG MAKER?</h2>
+<span class="Style4"><br \>
+  <span class="Style5">FLOG MAKER is an entirely self-contained alternative flash blog system that resides within a WordPress plugin, designed for absolutely seamless integration with your WordPress installation.  Among its features are:
+  <br \>
+  <br \>
+  - Full integration with WordPress' own user system<br \>
+  - Multiple flash blog setup<br \>
+  - Search capabilities<br \>
+  - Calendar capabilities<br \>
+  - Contact capabilities<br \>
+  - Totally customisable<br \>
+  - Clean uninstall if you don't like it :)</span><br \>
+<br \>
+<br \>
+</span>
+<h2 class="Style4">INSTALLING</h2>
+<p class="Style4"><span class="Style5"><b>NOTE:</b> Flog maker is ALPHA software! It may malfunction, corrupt its own data and bite your dog.  Please bear these in mind while I try and iron out the bugs!
+  <br \>
+  <br \>
+The lowest specs Flog Maker has been tested on so far PHP 4.4.4, MySQL 4.0, Apache 1.3.33 and WordPress 2.0.3.
+<br \>
+If it works for you on worse specs, please let me know.  My email address is at the bottom.<br \>
+<br \>
+
+  To install FlashBlog, follow these steps:<br \>
+  <br \>
+  1. &nbsp;&nbsp;Upload the /flog-maker/ directory to your WordPress plugins folder (note: upload the DIRECTORY itself, not just the files)<br \>
+  2. &nbsp;&nbsp;Upload the /wp-flashblog/ directory to your WordPress plugins folder (note: upload the DIRECTORY itself, not just the files)<br \>
+  3. &nbsp;&nbsp;Activate the plugin<br \>
+  4. &nbsp;&nbsp;Be sure the flashblog url in the managment plugin settings is the right one<br \>
+  5. &nbsp;&nbsp;You're done!<br \>
+  <br \>
+  
+  This is how the files fit into the overall file structure of your site:<br \>
+  <br \>
+
+  wordpress/<br \>
+  + wp-content/<br \>
+&nbsp;&nbsp;+ plugins/<br \>
+&nbsp;&nbsp;&nbsp;<strong>+ flog-maker/</strong><br \>
+&nbsp;&nbsp;&nbsp;&nbsp;+ admin/<br \>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|+ admin.php<br \>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  + couleur.php<br \>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  + onglets.php<br \>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  + infos.php<br \>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  + edit-bg.php<br \>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  + overview.php<br \>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  + advanced.php<br \>
+&nbsp;&nbsp;&nbsp;&nbsp;+ languages/<br \>
+&nbsp;&nbsp;&nbsp;&nbsp;+ flog-maker.php<br \>
+&nbsp;&nbsp;&nbsp;&nbsp;+ class.php<br \>
++ wp-admin/<br \>
+<strong>+ wp-flashblog/</strong><br \>
+        <br \>
+    You'll find a new top-level menu option in your site admin, labelled "FlashBlog".  From here you can set up your configuration  variables, and be ready to run in seconds. <br \>
+  <br \>
+  The flashblog is accessible by your url /wp-flashblog/ </span><br \>
+  <br />
+</p>
+
+<h2 class="Style4">UPGRADING</h2>
+<p class="Style4">
+  <span class="Style5">Deactive the plugin, remove the flog-maker  directory and replace it entirely with the new one.  Reactivate the plugin afterwards.<br \>
+  HOWEVER, any customisation of your flashblog will be lost.  <br \>
+  You will have to re-enable any custom templates. </span><br \>
+</p>
+<h2 class="Style4">UNINSTALLING</h2>
+<p class="Style6">  If you don't like FlogMaker and want to remove it permanently, there is a clean uninstall option that will remove all data that was created when you installed.  Simply go to FlahBlog > Advanced > Uninstall and follow the prompts and it'll be out of your hair in no time. <br \>
+</p>
+
+<h2 class="Style4">CSS AND FLOGMAKER</h2>
+<p class="Style6">Css is not well interpreted in flash textfields. only few attributs are  allowed (see the documentation), and that is why this plugin is  absolutely not compatible with plugins like &ldquo;syntaxHighlighter&raquo;.<br />
+You can add pictures but no movies.</p>
+<p class="Style6">Rare are css tags which are interpreted by Flash. Don&rsquo;t hope to use  div or tables, they are not interpreted and can make bugs and break  page layout.</p>
+<p class="Style6">Texts styles are defined manually in the file :  wp-flashblog/css/style.css. You can edit attributes and values, colors,  fonts, sizes &hellip;<br />
+  These tags are mapped to the content with a replacement function of the  following tags. If you do not use these tags, your text styles will be  not visible in FlashBlog.</p>
+<p class="Style6">So try to use at the maximum these tags in your content to have a nice and various article:</p>
+<ul class="Style6">
+  <li>&lt;strong&gt;&lt;/strong&gt;</li>
+  <li>&lt;a href=&rdquo;&quot; target=&rdquo;&quot; title=&rdquo;&quot;&gt;&lt;/a&gt;</li>
+  <li>&lt;h1&gt;&lt;/h1&gt;</li>
+  <li>&lt;h2&gt;&lt;/h2&gt;</li>
+  <li>&lt;h3&gt;&lt;/h3&gt;</li>
+  <li>&lt;li&gt;&lt;/li&gt;</li>
+  <li> &lt;img src=&rdquo;/84095907_0af4994686.jpg&rdquo; alt=&rdquo;un arbre &rdquo;  name=&rdquo;image109&Prime; hspace=&rdquo;20&Prime; vspace=&rdquo;20&Prime; align=&rdquo;absmiddle&rdquo; id=&rdquo;image109&Prime;  /&gt;</li>
+  <li>&lt;i&gt;&lt;/i&gt;</li>
+  <li>&lt;br /&gt;</li>
+</ul>
+<p class="Style6">For the moment, flog maker allow only simple html contents, but i am  working on insertion of medias like movies or swf files, and on a  picture galery.</p>
+<p class="Style6"><br \>
+</p>
