@@ -1,0 +1,64 @@
+<p>On reproche beaucoup au flash de limiter le référencement et la visibilité d’un site. Il y a aujourd’hui des moyens pour améliorer un petit peu ce défaut. Utiliser le système d’URL rewriting est un de ces moyens. Pour un blog par exemple, on peut décider de générer une url, c'est-à-dire une page pour chacun des articles. C’est ce que j’ai fais sur ce blog.<br />
+Ce sytème permet également des statistiques plus détaillées pour les accros des chiffres ?.</p>
+<p><span class="bold">Les étapes principales :</span><br />
+<span class="liste">1. Définir le format des URLs souhaitées</span><br />
+<span class="liste">2. Générer ces URLs depuis le flash<br />
+<span class="liste">3. Récupérer les paramètres dans le PHP afin de les transmettre au flash en cas de rechargement de la page</span><br />
+<span class="liste">4. Gérer dans flash l’ouverture du site à la page correspondante à l’url en cas de rechargement</span><br />
+<span class="liste">5. Générer le sitemap avec le même modèle d’url afin que google puisse scanner chaque page du blog ou site. </span><br />
+Je pars sur l’exemple de ce blog, après bien sur c’est applicable à n’importe quel type de site</span></p>
+<p><span class="titre">1. Définir le format des URLs souhaitées</span><br />
+Elles doivent contenir la ou les variables qui permettront à flash d’ouvrir le site à la bonne page.<br />
+Exemple : <span class="lien"><a target="_blank" href="#idCat=2&amp;idArticle=80&amp;la-librairie-javascript-jquery">http://flashblog.lutincapuche.info/#idCat=2&amp;idArticle=80&amp;la-librairie-javascript-jquery</a></span>Je récupère la catégorie et l’id de mon article.<br />
+J’ai rajouté le titre de la page car cela améliore le référencement des pages. Wordpress par exemple rajoute un champ dans  la base de données qui formate le titre sans accents, ni espace ni caractères spéciaux afin de le rendre optimisé pour un affichage dans l’url.<br />
+J’ai décidé de rajouté 5 pages correspondant aux 5 onglets sur la gauche :<br />
+Les urls sont de la forme :<br />
+http://flashblog.lutincapuche.info/#page=Chercher<br />
+Je récupère la variable page.<br />
+Prévoyez donc de passer en paramètre au flash lors de son appel dans le html ces différentes variables.<br />
+Ce format d’url est ensuite utilisé dans le flash, dans le site map, et dans le html.<br />
+<span class="titre">2. Générer ces URLs depuis le flash</span><br />
+La fonction AS toute simple qui permet de modifier directement l’url dans la barre de navigation :<br />
+<span class="italic">[as]<br />
+import flash.external.ExternalInterface<br />
+function reecriture_url(tag){<br />
+ExternalInterface.call("eval",'location.href="http://blog.lutincapuche.info/#'+tag+'" mce_href="http://blog.lutincapuche.info/#'+tag+'"');<br />
+}<br />
+[/as]</span><br />
+Et de l’appeler lorsque un évènement affiche un article ou une partie de votre site.<br />
+<span class="italic">[as]<br />
+monBouton.onPress=function(){<br />
+monTag = "idCat="+idCat+"&amp;idArticle="+ idArticle +"&amp;"+TitreArticle ;<br />
+reecriture_url(monTag) ;<br />
+}<br />
+[/as]</span></p>
+<p><span class="titre">3. Récupérer les paramètres dans le PHP afin de les transmettre au flash en cas de rechargement de la page</span><br />
+Pour que la fonction <span class="bold">ExternalInterface</span> fonctionne, il faut l’utiliser avec le #. Peut être que quelqu’un a réussi à le faire marcher avec autre chose… qu’il le fasse savoir.<br />
+Donc on ne peut récupérer directement les variables en $_GET, il faut passer par un découpage de chaîne de caractères.<br />
+Ici un exemple, mais chacun a sa méthode !<br />
+<span class="italic">[javascript]<br />
+function retourne_cat(){<br />
+var url = window.location.href;<br />
+var posparamUrl = url.indexOf("#",0);<br />
+var url = url.substr(posparamUrl+1,500);<br />
+var posparamUrl = url.indexOf("#",0);<br />
+var paramUrl = url.substr(posparamUrl+1,500);<br />
+var posAnd = paramUrl.indexOf("&amp;",0);<br />
+var chaineCategorie = paramUrl.substr(0,posAnd);//idCat=0<br />
+var idCategorie = chaineCategorie.substr(chaineCategorie.indexOf("=",0)+1,100);//idCat=0<br />
+return idCategorie;<br />
+}<br />
+//idem pour l’id article<br />
+[/javascript]</span><br />
+Vous pouvez bien sur mettre des noms de variables moins longs et moins explicites, c’est même d’ailleurs conseillé (note a moi-même) !<br />
+Ensuite on appelle le flash en lui transmettant ces paramètres.</p>
+<p><span class="titre">4. Gérer dans flash l’ouverture du site à la page correspondante à l’url en cas de rechargement</span><br />
+Ici il est très dur de donner un exemple générique, car chaque fonction est différente.<br />
+Les variables récupérées portent le nom de celles envoyées de puis le html, c'est-à-dire ici _root.idCategorie et _root.idArticle.<br />
+Ensuite après avoir chargé mon XML, suivant si ces variables sont définies ou non, j’affiche l’accueil du blog ou je l’ouvre directement à la section indiquée.<br />
+<span class="bolditalic">Petit conseil : </span><span class="italic"> pour simplifier ce fonctionnement, utiliser l’id base de données de l’article comme référence dans le flash. Il est unique, et permet d’éviter de trop s’embrouiller dans les indices….</span></p>
+<p><span class="titre">5. Générer le sitemap avec le même modèle d’url afin que Google puisse scanner chaque page du blog ou site. </span><br />
+<span class="lien"><a target="_blank" href="http://flashblog.lutincapuche.info/zip/sitemap.php">Exemple de génération de sitemap ici</a></span><br />
+Générez en php à partir d’une requête le sitemap de votre site. Enregistrer ensuite le fichier sitemap.xml à la racine de votre site et mettez le à jour à chaque nouvelle insertion dans votre site<br />
+<span class="bolditalic"> Par exemple : </span><span class="italic"> réécriture du fichier sitemap à chaque nouvel enregistrement ou modification d’une entrée. </span><br />
+Ce sitemap doit être structuré de la même manière que votre site, il doit représenté toutes les pages accessibles dynamiquement et affiché exactement les mêmes URLs.</p>
