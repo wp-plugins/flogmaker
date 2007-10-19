@@ -1,0 +1,58 @@
+
+/*****il faut aussi copier les styles dans  D:\SITES\wordpress\wordpress\wp-content\themes\blix*/
+.bold {
+	color: #000000;
+	font-family: Verdana;
+	font-size: 10px;
+	display: block;
+	font-weight: bold;
+}
+
+.textnormal {
+	color: #000000;
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+.lien {
+	color: #666666;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+}
+.bolditalic {
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: italic;
+	font-weight:bold;
+}
+.classic{
+	font-family: Verdana;
+	font-size: 10px;
+}
+.italic {
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: italic;
+}
+.italic_as {
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: italic;
+	color:#7B9D3F;
+	background-color:#F2F2F2;
+}
+
+.titre {
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+}
+.liste {
+	font-family: Verdana;
+	font-size: 10px;
+	margin: .5em 0 .5em 0; 
+	list-style-type: square ;
+    padding-left: 5px;
+}
+
