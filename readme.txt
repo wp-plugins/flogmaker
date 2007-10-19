@@ -1,4 +1,4 @@
-﻿=== FlogMaker Plugin ===
+﻿==== FlogMaker Plugin ====
 Contributors: Céline Mornet
 Donate link: http://www.lutincapuche.com/
 Tags: formatting, flash
