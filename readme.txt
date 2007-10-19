@@ -1,4 +1,4 @@
-﻿=== Plugin Name ===
+﻿=== FlogMaker Plugin ===
 Contributors: Céline Mornet
 Donate link: http://www.lutincapuche.com/
 Tags: formatting, flash
@@ -6,8 +6,7 @@ Requires at least: 2.0.3
 Tested up to: 2.0.3
 Stable tag: 1.0.1
 
-The Flog Maker is a plugin for us with the Wordpress publishing platform.
-This is a very primitive piece of documentation, I do plan to write much fuller documentation for the next release in a couple of weeks , mostly covering the theming system.
+FLOG MAKER is an entirely self-contained alternative flash blog system that resides within a WordPress plugin
 
 == Description ==
 
