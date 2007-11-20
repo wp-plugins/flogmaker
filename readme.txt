@@ -2,9 +2,9 @@
 Contributors: Céline Mornet
 Donate link: http://www.lutincapuche.com/
 Tags: formatting, flash
-Requires at least: 2.0.3
-Tested up to: 2.0.3
-Stable tag: 1.0.1
+Requires at least: 2.3.1
+Tested up to: 2.3.1
+Stable tag: 2.3.1
 
 FLOG MAKER is an entirely self-contained alternative flash blog system that resides within a WordPress plugin
 
@@ -26,7 +26,7 @@ FLOG MAKER is an entirely self-contained alternative flash blog system that resi
 
 NOTE: Flog maker is ALPHA software! It may malfunction, corrupt its own data and bite your dog. Please bear these in mind while I try and iron out the bugs!
 
-The lowest specs Flog Maker has been tested on so far PHP 4.4.4, MySQL 4.0, Apache 1.3.33 and WordPress 2.0.3.
+The lowest specs Flog Maker has been tested on so far PHP 4.4.4, MySQL 4.0, Apache 1.3.33 and WordPress 2.3.1.
 If it works for you on worse specs, please let me know. My email address is at the bottom.
 
 To install FlashBlog, follow these steps:
