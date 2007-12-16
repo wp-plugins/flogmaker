@@ -4,7 +4,7 @@ Donate link: http://www.lutincapuche.com/
 Tags: formatting, flash
 Requires at least: 2.3.1
 Tested up to: 2.3.1
-Stable tag: 1.0.1
+Stable tag: 1.0.3
 
 FLOG MAKER is an entirely self-contained alternative flash blog system that resides within a WordPress plugin
 
